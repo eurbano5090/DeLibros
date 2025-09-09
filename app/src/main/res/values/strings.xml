@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name" translatable="false">DeLibros</string>
+    <string name="recuperar_clave" translatable="false">Recuperar Clave" </string>
+    <string name="crear_cuenta" translatable="false">Crear Cuenta</string>
+    <string name="buttonLogin" translatable="false">Ingresar</string>
+    <string name="password" translatable="false">Contraseña</string>
+    <string name="imagen_bienvenida_login" translatable="false">Imagen bienvenida</string>
+    <string name="username" translatable="false">Usuario</string>
+    <string name="comprar" translatable="false">Comprar</string>
+    <string name="galeria" translatable="false">Galeria</string>
+    <string name="buscar" translatable="false">Buscar</string>
+    <string name="enviar" translatable="false">Enviar</string>
+    <string name="configuracion" translatable="false">Configuration</string>
+    <string name="ingresa_tu_email_para_recuperar_la_password" translatable="false">Ingresa tu email para recuperar la password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="inicio" translatable="false">Inicio</string>
+    <string name="password_olvidada" translatable="false">Olvidaste tu clave</string>
+    <string name="atras" translatable="false">Atrás</string>
+    <string name="formatoEmail" translatable="false">tu@email.com</string>
+    <string name="perfil" translatable="false">Perfil</string>
+    <string name="punto_de_ubicacion" translatable="false">Punto de ubicación</string>
+    <string name="mapa_de_barrios" translatable="false">Mapa de restaurantes</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="mapa">Mapa</string>
+    <string name="Bienvenido">Bienvenido 👋</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="novedades_de_la_semana">Novedades de la semana !</string>
+    <string name="siguiente"><![CDATA[>]]></string>
+    <string name="anterior"><![CDATA[<]]></string>
+    <string name="todo">TODO</string>
+</resources>

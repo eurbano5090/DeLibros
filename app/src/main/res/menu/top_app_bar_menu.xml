@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Botón del perfil del usuario -->
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/perfil"
+        app:showAsAction="always"
+        android:layout_width="@dimen/size_small"
+        android:layout_height="@dimen/size_small"
+        app:actionLayout="@layout/profile_icon_layout"
+        app:iconTint="@color/red" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_setting"
+        android:title="@string/perfil"
+        app:showAsAction="ifRoom"
+        app:iconTint="@color/red" />
+</menu>

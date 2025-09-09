@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LoginButtonStyle" parent="Widget.MaterialComponents.Button">
+        <!-- Color de fondo -->
+        <item name="backgroundTint">@color/login_button_bg</item>
+        <!-- Color del texto -->
+        <item name="android:textColor">@color/login_button_text</item>
+        <!-- Bordes redondeados -->
+        <item name="cornerRadius">16dp</item>
+        <!-- Ripple al presionar (transparente para que no se vea contorno) -->
+        <item name="rippleColor">@android:color/transparent</item><!-- recorta como círculo -->
+
+    </style>
+
+    <style name="CircleImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item> <!-- círculo perfecto -->
+    </style>
+</resources>

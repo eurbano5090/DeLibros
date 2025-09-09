@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#9E9E9E</color> <!-- Activo -->
+    <color name="nav_item_inactive">#FFFFFF</color> <!-- Inactivo -->
+    <color name="purple">#33105D</color><!-- Fondo -->
+    <color name="login_button_bg">#FF000000</color> <!-- Fondo morado -->
+    <color name="login_button_text">#BA0000</color> <!-- Texto blanco -->
+    <color name="red">#BA0000</color>
+</resources>
