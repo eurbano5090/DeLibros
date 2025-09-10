@@ -6,19 +6,19 @@
         android:icon="@drawable/ic_inicio"
         android:title="@string/inicio" />
     <item
-        android:id="@+id/camaraFragment"
+        android:id="@+id/buscarFragment"
         android:icon="@drawable/ic_buscar"
         android:title="@string/buscar"/>
     <item
-        android:id="@+id/casosFragment"
+        android:id="@+id/galeriaFragment"
         android:icon="@drawable/ic_galeria"
         android:title="@string/galeria"/>
     <item
-        android:id="@+id/configuracionFragment"
+        android:id="@+id/favoritosFragment"
         android:icon="@drawable/ic_favoritos"
         android:title="@string/favoritos"/>
     <item
-        android:id="@+id/galeriaFragment"
+        android:id="@+id/carritoFragment"
         android:icon="@drawable/ic_carrito"
         android:title="@string/comprar"/>
 </menu>

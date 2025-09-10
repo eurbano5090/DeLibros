@@ -9,6 +9,13 @@
         android:id="@+id/inicioFragment"
         android:name="com.example.miprimerfragment.InicioFragment"
         android:label="@string/inicio" />
+
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.example.miprimerfragment.FavoritosFragment"
+        android:label="@string/favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+
     <fragment
         android:id="@+id/buscarFragment"
         android:name="com.example.miprimerfragment.BuscarFragment"

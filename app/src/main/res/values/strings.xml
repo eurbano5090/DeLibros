@@ -29,4 +29,8 @@
     <string name="siguiente"><![CDATA[>]]></string>
     <string name="anterior"><![CDATA[<]]></string>
     <string name="todo">TODO</string>
+    <string name="preferencias">Todavia no tienes titulos favoritos...</string>
+    <string name="lista">Aún no has creado ninguna lista.</string>
+    <string name="mis_favoritos">Mis favoritos</string>
+    <string name="agregar_favoritos">AÑADIR FAVORITOS</string>
 </resources>
