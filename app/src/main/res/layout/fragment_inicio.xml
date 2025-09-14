@@ -4,18 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="26dp">
+    >
 
-    <!-- Carrusel con ViewPager2 -->
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_intermedio"
         android:orientation="horizontal"
         android:layout_height="200dp"
-        android:clipToPadding="false"
-        android:clipChildren="false"
-        android:overScrollMode="never"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <TextView
@@ -26,10 +23,16 @@
         android:text="@string/novedades"
         android:layout_gravity="center_horizontal"
         android:fontFamily="@font/akatab_semibold"
-        android:textStyle="bold
-"
+        android:textStyle="bold"
         android:textSize="24sp" />
 
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLibros"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:clipToPadding="false"/>
 </LinearLayout>
 

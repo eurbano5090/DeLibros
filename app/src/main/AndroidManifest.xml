@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MiPrimerFragment">
 
         <activity
+            android:name=".DetalleLibroActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
 
