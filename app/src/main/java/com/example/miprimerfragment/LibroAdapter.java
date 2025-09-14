@@ -15,7 +15,7 @@ import java.util.List;
 
 public class LibroAdapter extends RecyclerView.Adapter<LibroAdapter.LibroViewHolder> {
 
-private List<Libro> libros;;
+private final List<Libro> libros;
 
 public LibroAdapter(List<Libro> libros) {
     this.libros = libros;
@@ -53,14 +53,7 @@ public LibroAdapter(List<Libro> libros) {
             }
         });
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-          //      Intent intent = new Intent(v.getContext(), DetalleLibroActivity.class);
-             //   intent.putExtra("libro", libro);
-          //      v.getContext().startActivity(intent);
-            }
-        });
+
     }
     @Override
     public int getItemCount() {

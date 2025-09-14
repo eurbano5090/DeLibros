@@ -9,8 +9,6 @@ import androidx.core.app.NavUtils;
 
 import com.example.miprimerfragment.databinding.ActivityDetalleLibroBinding;
 
-import java.util.List;
-
 
 public class DetalleLibroActivity extends AppCompatActivity {
 

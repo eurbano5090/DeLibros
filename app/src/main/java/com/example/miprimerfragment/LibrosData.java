@@ -39,8 +39,8 @@ public class LibrosData {
             libros.add(new Libro(3, "Dune", "Una lucha por el control del planeta desértico Arrakis.", R.drawable.dune, "Ciencia Ficción"));
             libros.add(new Libro(4, "1984", "Una distopía sobre un futuro totalitario.", R.drawable.mnoc, "Distopía"));
             libros.add(new Libro(13, "Ilusiones", "Historia de un maestro que busca cambiar tu vida", R.drawable.img3, "Novela Filosófica"));
-            libros.add(new Libro(14, "El Buzón de las Impuras", "Tragedia en Santiago 1893, casi el 20% de la población femenina muere", R.drawable.img1, "Misterio"));
-            libros.add(new Libro(15, "El Canto del Cuco", "Historia de la busqueda de un asesino", R.drawable.img2, "Novela Policíaca"));
+            libros.add(new Libro(14, "El Buzón de las Impuras", "Tragedia que ocurre en Santiago 1863", R.drawable.img1, "Novela Historica"));
+            libros.add(new Libro(15, "El Canto del Cuco", "Historia de la busqueda de una mujer desaparecida", R.drawable.img2, "Novela Policíaca"));
             libros.add(new Libro(6, "Fahrenheit 451", "Como la sociedad basa sus cimientos en el manejo de la informacion", R.drawable.fccu, "Ciencia Ficción"));
 
             return libros;
