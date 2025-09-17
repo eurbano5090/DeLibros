@@ -35,22 +35,18 @@ public LibroAdapter(List<Libro> libros) {
         holder.textViewTitulo.setText(libro.getTitulo());
         holder.textViewDescripcion.setText(libro.getDescripcion());
 
-        holder.buttonVerDetalle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int idTitulo = libro.getIdTitulo();
 
-                Intent intent = new Intent(v.getContext(), DetalleLibroActivity.class);
-                intent.putExtra("ID_TITULO", idTitulo); // Only pass the ID
 
-                v.getContext().startActivity(intent);
-            }
-                                                   });
-        holder.buttonAgregarCarrito.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Lógica para agregar el libro al carrito
-            }
+        holder.buttonVerDetalle.setOnClickListener(v -> {
+            int idTitulo = libro.getIdTitulo();
+
+            Intent intent = new Intent(v.getContext(), DetalleLibroActivity.class);
+            intent.putExtra("ID_TITULO", idTitulo); // Only pass the ID
+
+            v.getContext().startActivity(intent);
+        });
+        holder.buttonAgregarCarrito.setOnClickListener(v -> {
+            // Lógica para agregar el libro al carrito
         });
 
 
@@ -68,6 +64,8 @@ public LibroAdapter(List<Libro> libros) {
         public TextView textViewTitulo;
         public TextView textViewDescripcion;
 
+
+
     public LibroViewHolder(@NonNull View itemView) {
         super(itemView);
         imageViewPortada = itemView.findViewById(R.id.iv_portada);
@@ -75,6 +73,7 @@ public LibroAdapter(List<Libro> libros) {
         buttonAgregarCarrito = itemView.findViewById(R.id.btn_agregar_carrito);
         textViewTitulo = itemView.findViewById(R.id.tvTitulo);
         textViewDescripcion = itemView.findViewById(R.id.tvDescripcion);
+
 
 
 

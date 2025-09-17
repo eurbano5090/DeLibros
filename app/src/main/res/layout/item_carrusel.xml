@@ -6,6 +6,7 @@
         android:id="@+id/imageCarrusel"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/carrusel_ofertas"
         android:scaleType="centerCrop"
 
         />

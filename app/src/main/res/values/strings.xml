@@ -21,22 +21,22 @@
     <string name="perfil" translatable="false">Perfil</string>
     <string name="punto_de_ubicacion" translatable="false">Punto de ubicación</string>
     <string name="mapa_de_barrios" translatable="false">Mapa de restaurantes</string>
-    <string name="bienvenido">Bienvenido</string>
-    <string name="mapa">Mapa</string>
-    <string name="Bienvenido">Bienvenido 👋</string>
-    <string name="favoritos">Favoritos</string>
-    <string name="novedades_de_la_semana">Novedades de la semana !</string>
+    <string name="bienvenido" translatable="false">Bienvenido</string>
+    <string name="mapa" translatable="false">Mapa</string>
+    <string name="Bienvenido" translatable="false">Bienvenido 👋</string>
+    <string name="favoritos" translatable="false">Favoritos</string>
+    <string name="novedades_de_la_semana" translatable="false">Novedades de la semana !</string>
     <string name="siguiente"><![CDATA[>]]></string>
     <string name="anterior"><![CDATA[<]]></string>
-    <string name="todo">TODO</string>
-    <string name="preferencias">Todavia no tienes titulos favoritos...</string>
-    <string name="lista">Aún no has creado ninguna lista.</string>
-    <string name="mis_favoritos">Mis favoritos</string>
-    <string name="agregar_favoritos">AÑADIR FAVORITOS</string>
-    <string name="novedades">Novedades para ti</string>
-    <string name="tv_home_titulo">Bienvenido a DeLibros</string>
-    <string name="descripcion_iv_portada">descripcionLibro</string>
-    <string name="btn_agregar_carrito">Comprar</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="preferencias" translatable="false">Todavia no tienes titulos favoritos...</string>
+    <string name="lista" translatable="false">Aún no has creado ninguna lista.</string>
+    <string name="mis_favoritos" translatable="false">Mis favoritos</string>
+    <string name="agregar_favoritos" translatable="false">AÑADIR FAVORITOS</string>
+    <string name="novedades" translatable="false">Novedades para ti</string>
+    <string name="tv_home_titulo" translatable="false">Bienvenido a DeLibros</string>
+    <string name="descripcion_iv_portada" translatable="false">descripcionLibro</string>
+    <string name="btn_agregar_carrito" translatable="false">Comprar</string>
     <string name="title_activity_detalle_libro">Leanback DetalleLibroActivity</string>
     <string name="browse_title">Videos by Your Company</string>
     <string name="related_movies">Related Videos</string>
@@ -54,5 +54,6 @@
     <!-- Error messages -->
     <string name="error_fragment_message">An error occurred</string>
     <string name="dismiss_error">Dismiss</string>
-    <string name="ver_detalle_libro">detalle</string>
+    <string name="ver_detalle_libro" translatable="false">detalle</string>
+    <string name="carrusel_ofertas" translatable="false">carrusel ofertas</string>
 </resources>

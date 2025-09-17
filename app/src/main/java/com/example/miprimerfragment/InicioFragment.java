@@ -5,8 +5,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Handler;
@@ -23,7 +21,7 @@ import java.util.List;
 public class InicioFragment extends Fragment {
 
     public FragmentInicioBinding binding;
-    private Handler carruselHandler = new Handler(Looper.getMainLooper());  // Handler para el carrusel
+    private final Handler carruselHandler = new Handler(Looper.getMainLooper());  // Handler para el carrusel
     private static final long TIEMPO_CAMBIO = 3000;
     private Runnable carruselRunnable;
 
@@ -80,6 +78,7 @@ public class InicioFragment extends Fragment {
     private void configurarListaDeLibros() {
 
         List<Libro> listaLibros = LibrosData.getInstance().getLibros();
+
         LibroAdapter adaptador = new LibroAdapter(listaLibros);
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);

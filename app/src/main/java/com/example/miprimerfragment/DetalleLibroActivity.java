@@ -1,8 +1,6 @@
 package com.example.miprimerfragment;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NavUtils;
@@ -29,18 +27,15 @@ public class DetalleLibroActivity extends AppCompatActivity {
 
             if (libro != null) {
                 binding.tvTitulo.setText(libro.getTitulo());
-                binding.tvDescripcion.setText(libro.getDescripcion());
+                binding.tvDetalle.setText(libro.getDetalle());
                 binding.ivPortada.setImageResource(libro.getImagenResourceId());
+
+
             }
         }
 
-        TextView backButton = findViewById(R.id.btn_tv_volver);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NavUtils.navigateUpFromSameTask(DetalleLibroActivity.this);
-            }
-        });
+
+        binding.btnTvVolver.setOnClickListener(v -> NavUtils.navigateUpFromSameTask(DetalleLibroActivity.this));
 
     }
 
