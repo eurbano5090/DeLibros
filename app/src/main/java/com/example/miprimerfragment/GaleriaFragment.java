@@ -15,7 +15,6 @@ import java.util.ArrayList;
 public class GaleriaFragment extends Fragment {
     private FragmentGaleriaBinding binding;
     private LibroAdapter adaptador;
-    private GestorCarroCompra gestor;
     private ArrayList<Libro> listaLibros;
 
 
@@ -48,9 +47,6 @@ public class GaleriaFragment extends Fragment {
     }
 
     private void cargarDatos() {
-        // Obtener carrito global
-        gestor = GestorCarroCompra.getInstancia();
-
         listaLibros.addAll(Datos.cargarLibros());
         //  notificar Cambio
         adaptador.notifyDataSetChanged();

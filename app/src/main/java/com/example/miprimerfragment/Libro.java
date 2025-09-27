@@ -1,6 +1,8 @@
 package com.example.miprimerfragment;
 
 import java.io.Serializable;
+import java.util.Objects;
+
 /*
 // Enviar Lista en el Intent:
     intent.putExtra("lista_libros", listaLibros);
@@ -31,6 +33,20 @@ public class Libro implements Serializable {
         setEdicion(edicion);
         setPrecio(precio);
         setIsbn(isbn);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Libro libro = (Libro) obj;
+        return Objects.equals(isbn, libro.isbn); // El ISBN es único para cada libro
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(isbn);
     }
 
     // Getters

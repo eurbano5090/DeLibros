@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         binding.btnLogin.setOnClickListener(v -> {
             if (Objects.requireNonNull(binding.etUsername.getText()).toString().isEmpty() || Objects.requireNonNull(binding.etPassword.getText()).toString().isEmpty()) {
                 Toast.makeText(LoginActivity.this, "No deben haber campos vacios", Toast.LENGTH_LONG).show();
-            } else if(binding.etUsername.getText().toString().equals("user") && binding.etPassword.getText()
+            } else if(binding.etUsername.getText().toString().equals("usuario") && binding.etPassword.getText()
                     .toString().equals("123")){
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);

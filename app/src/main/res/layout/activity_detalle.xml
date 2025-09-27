@@ -9,7 +9,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerDetalleActivity"
-        android:name="com.example.fullcowl.DetalleFragment"
+        android:name="com.example.miprimerfragment.DetalleFragment"
         android:layout_height="0dp"
         android:layout_width="match_parent"
         app:layout_constraintBottom_toTopOf="@+id/textFragmentActivity"

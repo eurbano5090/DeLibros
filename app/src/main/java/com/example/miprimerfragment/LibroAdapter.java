@@ -81,33 +81,20 @@ public class LibroAdapter extends RecyclerView.Adapter<LibroAdapter.LibroViewHol
     public static class LibroViewHolder extends RecyclerView.ViewHolder {
         private final ItemLibroBinding binding;
 
-        /*
-                // Referencias a las vistas del layout item_libro.xml
-                ImageView ivLibro;
-                TextView tvNombre, tvAutor, tvIdioma, tvDescripcion,
-                        tvPaginas, tvEdicion, tvPrecio, tvIsbn;
-                Button btnDetalles;
-
-                /**
-                 * Constructor del ViewHolder: aquí es donde se hace findViewById
-                 * una sola vez por cada ViewHolder creado.
-                 *
-                 * @param itemView La vista completa del item (el LinearLayout completo)
-                 */
         public LibroViewHolder(@NonNull ItemLibroBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
         }
 
         public void bind(Libro libro) {
-            binding.tvTitulo.setText("Título: " + libro.getNombre());
-            binding.tvAutor.setText("Autor: " + libro.getAutor());
-            binding.tvIdioma.setText("Idioma: " + libro.getIdioma());
-            binding.tvDescripcion.setText("Descripción: " + libro.getDescripcion());
-            binding.tvPaginas.setText(libro.getPaginas() + " páginas");
-            binding.tvEdicion.setText("Edición: " + libro.getEdicion());
-            binding.tvPrecio.setText("Precio: $" + libro.getPrecio() + "-");
-            binding.tvIsbn.setText("ISBN: " + libro.getIsbn());
+            binding.tvTitulo.setText(String.format("Título: %s", libro.getNombre()));
+            binding.tvAutor.setText(String.format("Autor: %s", libro.getAutor()));
+            binding.tvIdioma.setText(String.format("Idioma: %s", libro.getIdioma()));
+            binding.tvDescripcion.setText(String.format("Descripción: %s", libro.getDescripcion()));
+            binding.tvPaginas.setText(String.format("%s páginas", libro.getPaginas()));
+            binding.tvEdicion.setText(String.format("Edición: %s", libro.getEdicion()));
+            binding.tvPrecio.setText(String.format("Precio: $%s-", libro.getPrecio()));
+            binding.tvIsbn.setText(String.format("ISBN: %s", libro.getIsbn()));
 
             // Cargar imagen
             if (libro.getImagen() != null && !libro.getImagen().isEmpty()) {

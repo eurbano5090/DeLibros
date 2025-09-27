@@ -10,7 +10,7 @@
     <string name="galeria" translatable="false">Galeria</string>
     <string name="buscar" translatable="false">Buscar</string>
     <string name="enviar" translatable="false">Enviar</string>
-    <string name="configuracion" translatable="false">Configuration</string>
+    <string name="configuracion" translatable="false">Config</string>
     <string name="ingresa_tu_email_para_recuperar_la_password" translatable="false">Ingresa tu email para recuperar la password</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>

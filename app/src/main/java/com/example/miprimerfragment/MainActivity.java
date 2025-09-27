@@ -5,12 +5,11 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
-import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.miprimerfragment.databinding.ActivityMainBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
@@ -23,8 +22,12 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setupNavigation();
+        setupBottomNavigation();
 
+        setupTopAppBar();
+    }
+
+    private void setupTopAppBar() {
         // Configurar clicks del menú de la AppBar
         binding.topAppBar.setOnMenuItemClickListener(item -> {
             if (item.getItemId() == R.id.action_settings) {
@@ -36,12 +39,10 @@ public class MainActivity extends AppCompatActivity {
             }
             return false;
         });
-
-
-
     }
 
-    private void setupNavigation() {
+    private void setupBottomNavigation() {
+/*
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(binding.navHostFragment.getId());
         if (navHostFragment != null){
             navController = navHostFragment.getNavController();
@@ -53,6 +54,17 @@ public class MainActivity extends AppCompatActivity {
                     new AppBarConfiguration.Builder(navController.getGraph()).build();
 
             NavigationUI.setupWithNavController(binding.topAppBar, navController, appBarConfiguration);
+        }
+ */
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(binding.navHostFragment.getId());
+
+        if (navHostFragment != null) {
+            navController = navHostFragment.getNavController();
+
+            // este para las animaciones carnalito
+            BottomNavigationView bottomNavigationView = binding.bottomNavigationView;
+
+            NavigationUI.setupWithNavController(binding.bottomNavigationView, navController);
         }
     }
 }

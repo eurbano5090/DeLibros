@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 
 import com.example.miprimerfragment.databinding.FragmentCarritoBinding;
 
+import java.util.ArrayList;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link CarritoFragment#newInstance} factory method to
@@ -17,6 +19,9 @@ import com.example.miprimerfragment.databinding.FragmentCarritoBinding;
  */
 public class CarritoFragment extends Fragment {
     private FragmentCarritoBinding binding;
+    private LibroAdapter adaptador;
+    private GestorCarroCompra gestor;
+    private ArrayList<Libro> carroLibros;
 
     public CarritoFragment() {
         // Required empty public constructor
@@ -37,6 +42,26 @@ public class CarritoFragment extends Fragment {
     }
 
     private void inicializarVistas() {
+        iniciarRecyclerView();
+        cargarDatosCarro();
+    }
 
+    private void iniciarRecyclerView() {
+        carroLibros = new ArrayList<>();
+
+        binding.rvCarro.setLayoutManager(new androidx.recyclerview.widget.LinearLayoutManager(getContext()));
+
+        adaptador = new LibroAdapter(carroLibros);
+
+        binding.rvCarro.setAdapter(adaptador);
+    }
+
+    private void cargarDatosCarro() {
+        // obtener carro en memoria
+        gestor = GestorCarroCompra.getInstancia();
+
+        carroLibros.addAll(gestor.getCarroCompra());
+        //  notificar Cambio
+        adaptador.notifyDataSetChanged();
     }
 }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent" >
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/RVCarro"
+        android:id="@+id/rvCarro"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".CarroFragment" />
@@ -15,7 +15,7 @@
         android:id="@+id/TVTotal"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:text="TextView"
+        android:text="CarritoFragment"
         android:textSize="24sp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
