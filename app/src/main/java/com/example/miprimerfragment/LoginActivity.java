@@ -2,11 +2,7 @@ package com.example.miprimerfragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.renderscript.ScriptGroup;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.OnBackPressedCallback;
@@ -28,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         binding.btnLogin.setOnClickListener(v -> {
             if (Objects.requireNonNull(binding.etUsername.getText()).toString().isEmpty() || Objects.requireNonNull(binding.etPassword.getText()).toString().isEmpty()) {
                 Toast.makeText(LoginActivity.this, "No deben haber campos vacios", Toast.LENGTH_LONG).show();
-            } else if(binding.etUsername.getText().toString().equals("usuario") && binding.etPassword.getText()
+            } else if(binding.etUsername.getText().toString().equals("user") && binding.etPassword.getText()
                     .toString().equals("123")){
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);

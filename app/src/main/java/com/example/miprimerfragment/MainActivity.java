@@ -6,6 +6,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
@@ -22,13 +23,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Configurar NavController
-        navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-
-        AppBarConfiguration appBarConfiguration =
-                new AppBarConfiguration.Builder(navController.getGraph()).build();
-
-        NavigationUI.setupWithNavController(binding.topAppBar, navController, appBarConfiguration);
+        setupNavigation();
 
         // Configurar clicks del menú de la AppBar
         binding.topAppBar.setOnMenuItemClickListener(item -> {
@@ -41,5 +36,23 @@ public class MainActivity extends AppCompatActivity {
             }
             return false;
         });
+
+
+
+    }
+
+    private void setupNavigation() {
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(binding.navHostFragment.getId());
+        if (navHostFragment != null){
+            navController = navHostFragment.getNavController();
+            // Configurar NavController
+            //navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+            //navController = binding.navHostFragment.getNavController();
+
+            AppBarConfiguration appBarConfiguration =
+                    new AppBarConfiguration.Builder(navController.getGraph()).build();
+
+            NavigationUI.setupWithNavController(binding.topAppBar, navController, appBarConfiguration);
+        }
     }
 }
