@@ -21,30 +21,29 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
+
+        <Button
             android:id="@+id/btn_ver_detalle"
+            style="@style/LoginButtonStyle"
             android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="104dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="96dp"
             android:layout_marginBottom="4dp"
-            android:background="@drawable/circle_background"
-            android:contentDescription="@string/ver_detalle_libro"
-            android:padding="4dp"
-            android:src="@drawable/ic_ver_detalle"
-            android:textColor="@android:color/black"
+            app:rippleColor="@android:color/transparent"
+            app:icon="@drawable/ic_ver_detalle"
             app:layout_constraintBottom_toBottomOf="@id/iv_portada"
             app:layout_constraintStart_toStartOf="@id/iv_portada" />
 
-        <ImageButton
+        <Button
             android:id="@+id/btn_agregar_carrito"
+            style="@style/LoginButtonStyle"
             android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="108dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="100dp"
             android:layout_marginBottom="4dp"
-            android:background="@drawable/circle_background"
+            app:rippleColor="@android:color/transparent"
             android:contentDescription="@string/comprar"
-            android:src="@drawable/ic_carrito"
-            android:textColor="@android:color/black"
+            app:icon="@drawable/ic_carrito"
             app:layout_constraintBottom_toBottomOf="@id/iv_portada"
             app:layout_constraintEnd_toEndOf="@id/iv_portada" />
 

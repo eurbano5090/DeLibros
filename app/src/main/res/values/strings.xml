@@ -12,8 +12,6 @@
     <string name="enviar" translatable="false">Enviar</string>
     <string name="configuracion" translatable="false">Configuration</string>
     <string name="ingresa_tu_email_para_recuperar_la_password" translatable="false">Ingresa tu email para recuperar la password</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="inicio" translatable="false">Inicio</string>
     <string name="password_olvidada" translatable="false">Olvidaste tu clave</string>
     <string name="atras" translatable="false">Atrás</string>
@@ -21,7 +19,7 @@
     <string name="perfil" translatable="false">Perfil</string>
     <string name="punto_de_ubicacion" translatable="false">Punto de ubicación</string>
     <string name="mapa_de_barrios" translatable="false">Mapa de restaurantes</string>
-    <string name="bienvenido" translatable="false">Bienvenido</string>
+    <string name="titulo" translatable="false">Titulo</string>
     <string name="mapa" translatable="false">Mapa</string>
     <string name="Bienvenido" translatable="false">Bienvenido 👋</string>
     <string name="favoritos" translatable="false">Favoritos</string>
@@ -38,22 +36,19 @@
     <string name="descripcion_iv_portada" translatable="false">descripcionLibro</string>
     <string name="btn_agregar_carrito" translatable="false">Comprar</string>
     <string name="title_activity_detalle_libro">Leanback DetalleLibroActivity</string>
-    <string name="browse_title">Videos by Your Company</string>
-    <string name="related_movies">Related Videos</string>
-    <string name="grid_view">Grid View</string>
-    <string name="error_fragment">Error Fragment</string>
-    <string name="personal_settings">Personal Settings</string>
-    <string name="watch_trailer_1">Watch trailer</string>
-    <string name="watch_trailer_2">FREE</string>
-    <string name="rent_1">Rent By Day</string>
-    <string name="rent_2">From $1.99</string>
-    <string name="buy_1">Buy and Own</string>
-    <string name="buy_2">AT $9.99</string>
-    <string name="movie">Movie</string>
 
     <!-- Error messages -->
     <string name="error_fragment_message">An error occurred</string>
     <string name="dismiss_error">Dismiss</string>
     <string name="ver_detalle_libro" translatable="false">detalle</string>
     <string name="carrusel_ofertas" translatable="false">carrusel ofertas</string>
+    <string name="pagar">Ir a pagar</string>
+    <string name="carro_de_compras">Carro de Compras</string>
+    <string name="resumen_del_pedido">Resumen del Pedido</string>
+    <string name="_1" translatable="false">1</string>
+    <string name="Mas" translatable="false">+</string>
+    <string name="Menos" translatable="false">-</string>
+    <string name="total" translatable="false">Total a pagar</string>
+    <string name="total_a_pagar_0" translatable="false">Total a pagar : $0</string>
+    <string name="caduca_10_oct">Caduca: 10 oct</string>
 </resources>

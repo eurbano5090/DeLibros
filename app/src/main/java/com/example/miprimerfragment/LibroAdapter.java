@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -35,18 +37,20 @@ public LibroAdapter(List<Libro> libros) {
         holder.textViewTitulo.setText(libro.getTitulo());
         holder.textViewDescripcion.setText(libro.getDescripcion());
 
-
-
         holder.buttonVerDetalle.setOnClickListener(v -> {
             int idTitulo = libro.getIdTitulo();
 
             Intent intent = new Intent(v.getContext(), DetalleLibroActivity.class);
-            intent.putExtra("ID_TITULO", idTitulo); // Only pass the ID
+            intent.putExtra("ID_TITULO", idTitulo);
 
             v.getContext().startActivity(intent);
         });
+
         holder.buttonAgregarCarrito.setOnClickListener(v -> {
-            // Lógica para agregar el libro al carrito
+            Carrito.agregarItem(libro.getIdTitulo(), 1);
+
+            Toast.makeText(v.getContext(),
+                    libro.getTitulo() + " agregado al carrito", Toast.LENGTH_SHORT).show();
         });
 
 
@@ -58,12 +62,13 @@ public LibroAdapter(List<Libro> libros) {
 
     public static class LibroViewHolder extends RecyclerView.ViewHolder {
         public ImageView imageViewPortada;
-        public ImageButton buttonVerDetalle;
-        public ImageButton buttonAgregarCarrito;
+        public Button buttonVerDetalle;
+        public Button buttonAgregarCarrito;
 
         public TextView textViewTitulo;
         public TextView textViewDescripcion;
 
+        public TextView textViewPrecio;
 
 
     public LibroViewHolder(@NonNull View itemView) {
@@ -73,6 +78,8 @@ public LibroAdapter(List<Libro> libros) {
         buttonAgregarCarrito = itemView.findViewById(R.id.btn_agregar_carrito);
         textViewTitulo = itemView.findViewById(R.id.tvTitulo);
         textViewDescripcion = itemView.findViewById(R.id.tvDescripcion);
+        textViewPrecio = itemView.findViewById(R.id.tvPrecio);
+
 
 
 

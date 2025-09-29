@@ -1,6 +1,7 @@
 package com.example.miprimerfragment;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NavUtils;
@@ -30,15 +31,19 @@ public class DetalleLibroActivity extends AppCompatActivity {
                 binding.tvDetalle.setText(libro.getDetalle());
                 binding.ivPortada.setImageResource(libro.getImagenResourceId());
 
-
             }
         }
 
 
         binding.btnTvVolver.setOnClickListener(v -> NavUtils.navigateUpFromSameTask(DetalleLibroActivity.this));
 
+        binding.btnComprar.setOnClickListener(v -> {
+
+            Carrito.agregarItem(idTitulo, 1);
+            Toast.makeText(this, "Agregado al carrito", Toast.LENGTH_SHORT).show();
+            finish();
+        });
+
     }
-
-
 }
 

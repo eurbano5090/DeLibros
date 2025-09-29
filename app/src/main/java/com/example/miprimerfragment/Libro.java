@@ -10,16 +10,20 @@ public class Libro {
     private int imagenResourceId;
     private String categoria;
 
+    private int precio;
+
+
     public Libro() {
     }
 
-    public Libro(int idTitulo, String titulo, String descripcion, int imagenResourceId, String categoria,String detalle) {
+    public Libro(int idTitulo, String titulo, String descripcion, int imagenResourceId, String categoria,String detalle,int precio) {
         this.idTitulo = idTitulo;
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.imagenResourceId = imagenResourceId;
         this.categoria = categoria;
         this.detalle = detalle;
+        this.precio = precio;
     }
 
 
@@ -65,5 +69,9 @@ public class Libro {
 
     public String getDetalle() {
         return detalle;
+    }
+
+    public int getPrecio() {
+        return precio;
     }
 }

@@ -13,8 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/black"
-        app:logo="@mipmap/ic_launcher"
-        app:title="@string/app_name"
+        app:logo="@mipmap/ic_launcher_round"
+        app:actionLayout="@layout/profile_icon_layout"
         app:titleTextColor="@color/red"
         app:menu="@menu/top_app_bar_menu"
         tools:ignore="MissingConstraints" />
@@ -22,7 +22,7 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_view"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,15 +35,18 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_view"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         app:backgroundTint="@color/black"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
         app:itemIconTint="@color/red"
         app:itemTextColor="@color/red"
-        app:itemIconSize="32dp"
+        app:itemIconSize="21dp"
+        android:layout_gravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="@android:color/transparent"
         app:menu="@menu/bottom_navigation_menu" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,7 @@
     <dimen name="margin_extra_extra_large">150dp</dimen>
 
     <!-- Imágenes -->
+    <dimen name="size_extra_small">20dp</dimen>
     <dimen name="size_small">40dp</dimen>
     <dimen name="size_large">80dp</dimen>
 </resources>
