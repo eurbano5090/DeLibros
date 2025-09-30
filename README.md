@@ -24,7 +24,7 @@
 - RecyclerView + Adapter: para renderizar listas dinámicas y optimizadas de libros.
 - Modularidad: se creó un LibroAdapter para la sección de inicio y un GaleriaAdapter específico para la galería, manteniendo responsabilidades claras.
 - Diseño responsivo: uso de CardView y LinearLayout para mostrar la información en distintos dispositivos.
-- Simplicidad: algunos datos (como la fecha de caducidad en galería) son estáticos a modo de ejemplo, dejando espacio para futura integración con una API o base de datos.
+- Simplicidad: algunos datos (como la fecha de termino oferta en galería) son estáticos a modo de ejemplo, dejando espacio para futura integración con una API o base de datos.
 ### ▶️ Cómo ejecutar el proyecto
 
 1. Clona este repositorio:
