@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
 import com.example.miprimerfragment.databinding.FragmentCarritoBinding;
 
 import java.util.ArrayList;
@@ -23,14 +24,19 @@ public class CarritoFragment extends Fragment {
     private GestorCarroCompra gestor;
     private ArrayList<Libro> carroLibros;
 
+
+
+
     public CarritoFragment() {
         // Required empty public constructor
     }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

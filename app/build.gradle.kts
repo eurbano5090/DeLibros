@@ -42,6 +42,7 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.9.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.9.3")
     implementation("androidx.viewpager2:viewpager2:1.0.0")
+    implementation("com.airbnb.android:lottie:6.0.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

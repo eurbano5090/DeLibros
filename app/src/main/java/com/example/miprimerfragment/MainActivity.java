@@ -2,10 +2,20 @@ package com.example.miprimerfragment;
 
 import android.os.Bundle;
 import android.widget.Toast;
-
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
+
 import androidx.navigation.fragment.NavHostFragment;
+
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.AppBarConfiguration;
+
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.miprimerfragment.databinding.ActivityMainBinding;
@@ -15,12 +25,15 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private NavController navController;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
 
         setupBottomNavigation();
 
@@ -68,3 +81,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+

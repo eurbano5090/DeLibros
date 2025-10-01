@@ -30,8 +30,16 @@
     <string name="siguiente"><![CDATA[>]]></string>
     <string name="anterior"><![CDATA[<]]></string>
     <string name="todo">TODO</string>
+
     <string name="portada_del_libro">Portada del libro</string>
     <string name="descripcion_Portada">Portada del libro</string>
     <string name="btntorecycler">btnToRecycler</string>
     <string name="ver_detalles">ver Detalles</string>
+
+    <string name="preferencias">Todavia no tienes titulos favoritos...</string>
+    <string name="lista">Aún no has creado ninguna lista.</string>
+    <string name="mis_favoritos">Mis favoritos</string>
+    <string name="agregar_favoritos">AÑADIR FAVORITOS</string>
+    <string name="novedades">Novedades para ti</string>
+
 </resources>

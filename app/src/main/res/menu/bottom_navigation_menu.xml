@@ -14,7 +14,7 @@
         android:icon="@drawable/ic_galeria"
         android:title="@string/galeria"/>
     <item
-        android:id="@+id/configuracionFragment"
+        android:id="@+id/favoritosFragment"
         android:icon="@drawable/ic_favoritos"
         android:title="@string/configuracion"/>
     <item
