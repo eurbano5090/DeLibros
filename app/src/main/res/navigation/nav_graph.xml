@@ -19,21 +19,19 @@
     <fragment
         android:id="@+id/buscarFragment"
         android:name="com.example.miprimerfragment.BuscarFragment"
-        android:label="@string/buscar"
-        />
-
+        android:label="@string/buscar" />
     <fragment
         android:id="@+id/galeriaFragment"
         android:name="com.example.miprimerfragment.GaleriaFragment"
         android:label="@string/galeria" />
     <fragment
-        android:id="@+id/carritoFragment"
-        android:name="com.example.miprimerfragment.CarritoFragment"
-        android:label="@string/comprar" />
-    <fragment
         android:id="@+id/configuracionFragment"
         android:name="com.example.miprimerfragment.ConfiguracionFragment"
         android:label="@string/configuracion" />
+    <fragment
+        android:id="@+id/carritoFragment"
+        android:name="com.example.miprimerfragment.CarritoFragment"
+        android:label="@string/comprar" />
 
 
 </navigation>

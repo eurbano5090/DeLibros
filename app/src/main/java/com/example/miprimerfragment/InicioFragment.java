@@ -25,7 +25,6 @@ public class InicioFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_inicio, container, false);
     }
 
-    @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ViewPager2 viewPager = view.findViewById(R.id.viewPager);
@@ -50,5 +49,6 @@ public class InicioFragment extends Fragment {
                 }
             }
         });
+
     }
 }

@@ -3,13 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" >
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvGaleria"
+        android:id="@+id/rvCarro"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/transparent"
         tools:context=".CarroFragment" />
+
+    <TextView
+        android:id="@+id/TVTotal"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="CarritoFragment"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

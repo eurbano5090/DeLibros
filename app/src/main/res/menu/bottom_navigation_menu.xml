@@ -16,7 +16,7 @@
     <item
         android:id="@+id/favoritosFragment"
         android:icon="@drawable/ic_favoritos"
-        android:title="@string/favoritos"/>
+        android:title="@string/configuracion"/>
     <item
         android:id="@+id/carritoFragment"
         android:icon="@drawable/ic_carrito"
